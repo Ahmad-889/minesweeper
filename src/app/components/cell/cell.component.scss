@@ -1,0 +1,42 @@
+/* ---------- Cell ---------- */
+.cell {
+  aspect-ratio: 1 / 1; /* ensures square cells */
+  width: 100%; /* auto-fit from grid */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+  font-size: clamp(14px, 2vw, 20px); /* scales text */
+  background: linear-gradient(145deg, #dfe9f3, #ffffff);
+  color: #2c3e50;
+  box-shadow: 1px 1px 3px #b1b1b1, -1px -1px 3px #ffffff;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  &.revealed {
+    background: #707272;
+    color: #34495e;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15),
+                inset -2px -2px 6px rgba(255, 255, 255, 0.6);
+  }
+
+  &.mine {
+    // background: #e74c3c !important;
+    color: #fff;
+  }
+
+  &.flagged {
+    background: #f39c12 !important;
+    color: #fff;
+  }
+}
+
+

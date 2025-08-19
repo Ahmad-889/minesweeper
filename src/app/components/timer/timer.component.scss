@@ -1,0 +1,10 @@
+/* ---------- Timer ---------- */
+.timer {
+  font-size: clamp(16px, 3vw, 22px);
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

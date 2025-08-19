@@ -1,59 +1,100 @@
-# Minesweeper
+# 💣 Angular Minesweeper Game
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+A modern **Minesweeper Game** built with **Angular 19** using **standalone components** and a **service-driven architecture**.  
+It features a **grid-based game board**, **dynamic mine placement**, **timer & score tracking**, and a **responsive modern UI** — recreating the classic Minesweeper experience in the browser.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌐 Live Demo
+
+👉 [Click here to play the game](https://ahmad-889.github.io/minesweeper/)
+
+---
+
+## 🎯 What I Built
+
+This project is structured with **standalone components** for each part of the game and a **Game Service** that controls the game logic (mines, tiles, win/lose state).  
+Here’s the breakdown:
+
+* ✅ `BoardComponent`: Renders the Minesweeper grid and handles clicks  
+* ✅ `TileComponent`: Represents each cell (revealed, hidden, flagged, mine)  
+* ✅ `GameService`: Manages mine placement, tile state, and win/loss logic  
+* ✅ `HeaderComponent`: Displays timer, mine counter, and reset button  
+* ✅ Fully responsive design, mobile-friendly, and styled with Tailwind CSS
+
+---
+
+## 💡 Key Features
+
+* 💥 **Classic Minesweeper mechanics** (reveal, flag, chain-reveal for empty cells)  
+* ⏱ **Game timer** with start/stop logic  
+* 🚩 **Mine counter** with flagging support  
+* 🏆 **Win/Loss detection** with reset option  
+* 📱 Fully responsive design for desktop & mobile  
+* 🎨 Clean modern UI with smooth animations  
+
+---
+
+## 🧱 Technologies Used
+
+* Angular 19 (Standalone Components)
+* TypeScript
+* SCSS (Responsive UI)
+
+---
+
+## 📸 Screenshot
+
+![Minesweeper Game](public/Screenshot.png)
+
+---
+
+## 📁 Project Structure
+
+
+
+
+```
+src/
+└── app/
+├── components/
+│ ├── cell/
+│ │ ├── cell.component.ts # Each individual cell
+│ │ ├── cell.component.html
+│ │ └── cell.component.scss
+│ ├── minesweeper/
+│ │ ├── minesweeper.component.ts # Main game board (timer, reset, mine container)
+│ │ ├── minesweeper.component.html
+│ │ └── minesweeper.component.scss
+│ └── timer/
+│ ├── timer.component.ts # Timer
+│ ├── timer.component.html
+│ └── timer.component.scss
+├── services/
+│ ├──game.service.ts # Handles game logic (mines, win/lose, reveal, flags)
+│ └──timer.service.ts # Handles time logic 
+└── app.component.ts # Root component
+```
+
+## 🚀 Running the Project
+
+Install Angular CLI if you haven't:
 
 ```bash
+npm install -g @angular/cli
+```
+
+Install dependencies and serve:
+
+```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Visit `http://localhost:4200` to see the custom directives in action.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔗 Author
+Made with ❤️ by
+Muhammad Ahmad
